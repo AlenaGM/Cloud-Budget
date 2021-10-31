@@ -1,0 +1,528 @@
+/* Позиционирование: ========================================================================== */
+/** Внешний грид: header-main-footer --------------------------**/
+.container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh 50vh 65vh 50vh 50vh 50vh 45vh;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header"
+        "easytouse"
+        "features"
+        "technology"
+        "stayfocused"
+        "contact"
+        "footer";
+}
+
+/** Подгрид: header --------------------------**/
+.header {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 2.4fr 0.5fr 0.5fr 0.3fr;
+    grid-template-rows: 0.3fr 0.1fr 1fr 0.2fr 0.4fr;
+    align-items: center;
+    grid-template-areas:
+        ". headerlogo navigation select transparent-button"
+        ". . . . . "
+        ". . headertext . . "
+        ". . white-button . . "
+        ". . . . . ";
+}
+
+.headerlogo {
+    grid-area: headerlogo;
+    justify-self: left;
+}
+
+.navigation {
+    grid-area: navigation;
+    justify-self: center;
+}
+
+.select {
+    grid-area: select;
+    justify-self: right;
+}
+
+.transparent-button {
+    grid-area: transparent-button;
+    justify-self: right;
+}
+
+.headertext {
+    grid-area: headertext;
+}
+
+.white-button {
+    grid-area: white-button;
+    align-self: start;
+    justify-self: center;
+}
+
+/** Подгрид: раздел Easy to use --------------------------**/
+.easytouse {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr 0.3fr 1.8fr 1fr;
+    grid-template-rows: 0.5fr 1.7fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . . . ."
+        ". easytouseleft . easytouseright ."
+        ". . . . .";
+}
+
+.easytouseleft {
+    grid-area: easytouseleft;
+}
+
+.easytouseright {
+    grid-area: easytouseright;
+    justify-self: center;
+}
+
+/** Подгрид: раздел Features --------------------------**/
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 0.2fr 1.5fr 0.2fr 1.5fr 1fr;
+    grid-template-rows: 0.2fr 0.5fr 0.3fr 2fr 0.3fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . . . . . ."
+        ". featurestitle featurestitle featurestitle featurestitle featurestitle ."
+        ". . . . . . ."
+        ". features1 . features2 . features3 ."
+        ". . . . . . .";
+    align-content: center;
+    justify-content: center;
+}
+
+.featurestitle {
+    grid-area: featurestitle;
+    padding-top: 20px;
+}
+
+.features1 {
+    grid-area: features1;
+}
+
+.features2 {
+    grid-area: features2;
+}
+
+.features3 {
+    grid-area: features3;
+}
+
+.features11,
+.features22,
+.features33 {
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: #FFffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    -webkit-transform: translateY(-30%);
+    transform: translateY(-30%);
+}
+
+/** Подгрид: раздел Technology --------------------------**/
+.technology {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 0.2fr 1.5fr 0.2fr 1.5fr 0.2fr 1.5fr 2fr;
+    grid-template-rows: 0.3fr 0.5fr 0.2fr 1fr 0.3fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . . . . . . . ."
+        ". . technologytitle technologytitle technologytitle technologytitle technologytitle . ."
+        ". . . . . . . . ."
+        ". technology1 . technology2 . technology3 . technology4 ."
+        ". . . . . . . . .";
+}
+
+.technologytitle {
+    grid-area: technologytitle;
+}
+
+.technology1 {
+    grid-area: technology1;
+    padding: 15px;
+}
+
+.technology2 {
+    grid-area: technology2;
+    padding: 15px;
+}
+
+.technology3 {
+    grid-area: technology3;
+    padding: 15px;
+}
+
+.technology4 {
+    grid-area: technology4;
+    padding: 15px;
+}
+
+/** Подгрид: раздел Stay focused --------------------------**/
+.stayfocused {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr 0.5fr 1.8fr 0.8fr;
+    grid-template-rows: 0.5fr 1.7fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . . . ."
+        ". stayfocusedleft . stayfocusedright ."
+        ". . . . .";
+}
+
+.stayfocusedleft {
+    grid-area: stayfocusedleft;
+}
+
+.stayfocusedright {
+    grid-area: stayfocusedright;
+}
+
+/** Подгрид: раздел Contact --------------------------**/
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr 0.5fr 1.8fr 0.8fr;
+    grid-template-rows: 0.5fr 1.7fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . . . ."
+        ". contactleft . contactright ."
+        ". . . . .";
+}
+
+.contactleft {
+    grid-area: contactleft;
+}
+
+.contactright {
+    grid-area: contactright;
+}
+
+.contactbox {
+    display: grid;
+    grid-template-columns: 1.5fr 0.05fr 1.7fr;
+    grid-template-rows: 1fr 0.2fr 1fr 0.2fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "inputtextname . inputtextlastname"
+        ". . ."
+        "inputtextphone inputtextphone inputtextphone"
+        ". . ."
+        "inputtext inputtext inputtext";
+}
+
+.inputtextname {
+    grid-area: inputtextname;
+}
+
+.inputtextlastname {
+    grid-area: inputtextlastname;
+}
+
+.inputtextphone {
+    grid-area: inputtextphone;
+}
+
+.inputtext {
+    grid-area: inputtext;
+}
+
+.inputtextname,
+.inputtextlastname,
+.inputtextphone,
+.inputtext {
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    border: solid 1px #132743;
+}
+
+/** Подгрид: раздел Footer --------------------------**/
+.footer {
+    display: grid;
+    grid-template-columns: 1.3fr 1.5fr 0.7fr 1.5fr 0.7fr 1.5fr 0.7fr 1.5fr 1.2fr;
+    grid-template-rows: 0.2fr 1fr 0.4fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . . . . . . . ."
+        ". footerone . footertwo . footerthree . footerfour ."
+        ". . . . . . . . ."
+        ". copyright copyright copyright copyright . . . .";
+}
+
+.footerone {
+    grid-area: footerone;
+}
+
+.footertwo {
+    grid-area: footertwo;
+}
+
+.footerthree {
+    grid-area: footerthree;
+}
+
+.footerfour {
+    grid-area: footerfour;
+}
+
+.copyright {
+    grid-area: copyright;
+}
+
+/* Типографика ========================================================================== */
+/** Заголовки --------------------------**/
+h1,
+h2,
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 72px;
+    line-height: 86px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 18px;
+    text-align: center;
+}
+
+/*** Заголовок H2 - разделы Features; Technology - выравнивание по центру ***/
+h2.featurestitle,
+h2.technologytitle {
+    text-align: center;
+}
+
+/*** Заголовок H2 и текст раздел Stay focused - изменение цвета ***/
+h2.stayfocusedtitle,
+p.stayfocusedtext {
+    color: #ffffff;
+}
+
+/*** Заголовок H2 - раздел Footer - изменение размера ***/
+h2.footertitle {
+    font-size: 18px;
+}
+
+/** Просто текст - все разделы------------------------------ **/
+p {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/** Просто текст - header, разлел "Навигация" ----------------**/
+.menu {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+    padding-left: 0.8vw;
+    padding-right: 0.8vw;
+}
+
+/** Просто текст - header, разлел "Cloud budget management"**/
+p.headerintro {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/** Просто текст - раздел "Easytouse"**/
+p.easytousetext {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+/** Просто текст под подзаголовками H3 - Features; Technology ----------------------------- **/
+p.featurestext,
+p.technologytext {
+    text-align: center;
+    font-size: 12px;
+}
+
+/** Просто текст раздел Contact - поля формы ----------------------------- **/
+.inputtext,
+.inputtextname,
+.inputtextlastname,
+.inputtextphone {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #132743;
+}
+
+/*** Просто текст - раздел Footer ------------------------------ ***/
+p.footertext,
+.copyright {
+    font-size: 12px;
+}
+
+#address {
+    line-height: 1.6em;
+}
+
+/* Оформление (ссылки, кнопки, картинки)========================================================================== */
+/** Ссылки Learn more & Readmore <p>------------------------ **/
+.learnmore {
+    font-size: 14px;
+    text-decoration: none;
+    color: #ed4c5c;
+}
+
+.readmore {
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    color: #ed4c5c;
+}
+
+a:hover,
+.menu:hover {
+    color: #132743;
+    text-decoration-line: underline;
+}
+
+/** Кнопки----------------------------------------- **/
+.transparent-button,
+.white-button,
+.red-button {
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.transparent-button {
+    border-style: solid;
+    border-color: #ffffff;
+    color: #ffffff;
+    background: #ffffff00;
+    box-shadow: 0px 4px 4px rgba(17, 8, 8, 0.25);
+}
+
+.white-button {
+    border: none;
+    margin-top: 15px;
+    color: #ED4C5C;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(17, 8, 8, 0.25);
+}
+
+.red-button {
+    border: none;
+    color: #ffffff;
+    background: #ED4C5C;
+    margin-top: 30px;
+    box-shadow: 0px 4px 4px rgba(17, 8, 8, 0.25);
+    ;
+}
+
+button:hover,
+.select:hover {
+    cursor: pointer;
+}
+
+.select {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #ED4C5C00;
+    color: white;
+    width: 90px;
+    border: none;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    appearance: button;
+    outline: none;
+    padding: 11px 21px;
+    border-radius: 6px;
+}
+
+/** Картинки (по порядку------------------------------------------------- **/
+img.easytouseright {
+    width: 445px;
+}
+
+.features1,
+.features2,
+.features3 {
+    width: 350px;
+    border-radius: 8px;
+}
+
+.technologylogo {
+    width: 117px;
+    margin-left: 50px;
+}
+
+.stayfocusedimg {
+    width: 533px;
+}
+
+.socialmediaicon {
+    width: 18px;
+}
+
+.paymenticon {
+    width: 150px;
+}
+
+
+/**Фон**-------------------------------------------------------------------**/
+/***Фоновое изображение - Раздел "Header"***/
+.header {
+    background: url('../images/headerbgred.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+/***Фон - Раздел "Features"***/
+.features {
+    background-color: #fafafa;
+    background-size: cover;
+}
+
+/***Фон - Раздел "Stay focused"***/
+.stayfocused {
+    background-color: #ED4C5C;
+    background-size: cover;
+}
+
+/*** Фон - раздел Footer ***/
+.footer {
+    background-color: #fafafa;
+    background-size: cover;
+}
