@@ -456,11 +456,7 @@ button:hover {
 
 .select:hover {
     cursor: pointer;
-}
-
-.langselect {
-    background-color: #ED4C5C00;
-    color: white;
+    color: #white;
 }
 
 .select {
@@ -476,6 +472,10 @@ button:hover {
     outline: none;
     padding: 11px 21px;
     border-radius: 6px;
+}
+
+.langselect {
+    color: #132743;
 }
 
 /** Картинки (по порядку)------------------------------------------------- **/
