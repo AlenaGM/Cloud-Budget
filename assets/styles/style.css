@@ -456,11 +456,11 @@ button:hover {
 
 .select:hover {
     cursor: pointer;
-    color: white;
 }
 
 .langselect {
-    color: #132743;
+    background-color: #ED4C5C00;
+    color: white;
 }
 
 .select {
@@ -478,7 +478,7 @@ button:hover {
     border-radius: 6px;
 }
 
-/** Картинки (по порядку------------------------------------------------- **/
+/** Картинки (по порядку)------------------------------------------------- **/
 img.easytouseright {
     width: 445px;
 }
