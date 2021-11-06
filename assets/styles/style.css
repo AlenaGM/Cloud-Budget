@@ -486,12 +486,12 @@ img.easytouseright {
 .features1,
 .features2,
 .features3 {
-    width: 350px;
+    max-width: 350px;
     border-radius: 8px;
 }
 
 .technologylogo {
-    width: 117px;
+    max-width: 117px;
     margin-left: 50px;
 }
 
@@ -504,7 +504,7 @@ img.easytouseright {
 }
 
 .paymenticon {
-    width: 150px;
+    max-width: 150px;
 }
 
 
@@ -535,8 +535,302 @@ img.easytouseright {
     background-size: cover;
 }
 
-/*Медиазапросы - 1024 x 768 (iPad - Landscape) ==========================*/
 
+
+/*======================================================================*/
+/*Медиазапросы - 1024 x 768 (iPad - Landscape) -> Desktop ==========================*/
+@media screen and (min-width: 1024px) and (max-width: 1079px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 100vh 50vh 55vh 50vh 50vh 50vh 45vh;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header"
+            "easytouse"
+            "features"
+            "technology"
+            "stayfocused"
+            "contact"
+            "footer";
+    }
+
+    .easytouse {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 12% 80% 8%;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". ."
+            "easytouseleft easytouseright"
+            ". .";
+    }
+
+    .easytouseleft {
+        border: solid 1px green;
+        grid-area: easytouseleft;
+        padding-left: 6%;
+        padding-right: 2%;
+    }
+
+    .easytouseright {
+        border: solid 1px green;
+        grid-area: easytouseright;
+    }
+
+    img.easytouseright {
+        border: solid 1px green;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 1.4em;
+    }
+
+    h2.featurestitle {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+    .learnmore {
+        font-size: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 8px 14px;
+        border-radius: 6px;
+        color: #ffffff;
+        background: #ED4C5C;
+        box-shadow: 0px 4px 4px rgba(17, 8, 8, 0.25);
+    }
+
+    a.learnmore:hover {
+        color: #132743;
+        text-decoration-line: none;
+    }
+
+    .features {
+        border: solid 1px green;
+        display: grid;
+        grid-template-columns: 4% 28% 4% 28% 4% 28% 4%;
+        grid-template-rows: 8% 12% 80%;
+        gap: 0px 0px;
+        grid-template-areas:
+            " . . . . . . ."
+            " . . . featurestitle . . ."
+            ". features1 . features2 . features3 .";
+        align-content: center;
+        justify-content: center;
+    }
+
+    .featurestitle {
+        grid-area: featurestitle;
+    }
+
+    .features1 {
+        grid-area: features1;
+    }
+
+    .features2 {
+        grid-area: features2;
+    }
+
+    .features3 {
+        grid-area: features3;
+    }
+
+    img.features-img {
+        width: 100%;
+    }
+
+    .features11,
+    .features22,
+    .features33 {
+        border: solid 1px green;
+        padding: 3px 10px 3px 10px;
+        text-align: center;
+        margin-left: 2%;
+        margin-right: 2%;
+        background-color: #FFffff;
+        border-radius: 8px;
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+
+    .features1,
+    .features2,
+    .features3 {
+        margin-top: 0px;
+        border: solid 1px green;
+        border-radius: 8px;
+    }
+
+    .technology {
+        display: grid;
+        grid-template-columns: 10% 38% 4% 38% 10%;
+        grid-template-rows: 30% 35%% 35%;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". technologytitle technologytitle technologytitle."
+            ". technology1 . technology2 ."
+            ". technology3 . technology4 .";
+    }
+
+    .technologytitle {
+        border: solid 1px blue;
+        grid-area: technologytitle;
+        margin-top: 4%;
+    }
+
+    .technology1 {
+        border: solid 1px blue;
+        grid-area: technology1;
+        padding: 15px;
+    }
+
+    .technology2 {
+        border: solid 1px blue;
+        grid-area: technology2;
+        padding: 15px;
+    }
+
+    .technology3 {
+        border: solid 1px blue;
+        grid-area: technology3;
+        padding: 15px;
+    }
+
+    .technology4 {
+        border: solid 1px blue;
+        grid-area: technology4;
+        padding: 15px;
+    }
+
+    .technologylogo {
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+    .stayfocused {
+        display: grid;
+        grid-template-columns: 10% 75% 15%;
+        grid-template-rows: 10% 80% 10%;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". . ."
+            ". stayfocusedleft."
+            ". . .";
+    }
+
+    .stayfocusedleft {
+        grid-area: stayfocusedleft;
+    }
+
+    .stayfocusedright {
+        display: none;
+    }
+
+    .contact {
+        border: solid 1px blue;
+        display: grid;
+        grid-template-columns: 5% 38% 4% 48% 5%;
+        grid-template-rows: 5% 90% 5%;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". . . . ."
+            ". contactleft . contactright ."
+            ". . . . .";
+    }
+
+    .contactleft {
+        border: solid 1px blue;
+        grid-area: contactleft;
+    }
+
+    .contactright {
+        border: solid 1px blue;
+        grid-area: contactright;
+    }
+
+    .contactbox {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        gap: 0px 0px;
+        grid-template-areas:
+            "inputtextname"
+            "inputtextlastname"
+            "inputtextphone"
+            "inputtext";
+    }
+
+    .inputtextname {
+        grid-area: inputtextname;
+    }
+
+    .inputtextlastname {
+        grid-area: inputtextlastname;
+    }
+
+    .inputtextphone {
+        grid-area: inputtextphone;
+    }
+
+    .inputtext {
+        grid-area: inputtext;
+    }
+
+    .inputtextname,
+    .inputtextlastname,
+    .inputtextphone,
+    .inputtext {
+        padding-right: 0px;
+        padding-top: 5px;
+        padding-left: 0px;
+        padding-bottom: 5px;
+        margin-bottom: 1%;
+        border-radius: 6px;
+        border: solid 1px #132743;
+    }
+
+    .footer {
+        border: solid 1px blue;
+        display: grid;
+        grid-template-columns: 6% 20% 3% 20% 3% 20% 3% 20% 5%;
+        grid-template-rows: 80%;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". footerone . footertwo . footerthree . footerfour ."
+            ". . . . . . copyright copyright ."
+    }
+
+    .footerone {
+        border: solid 1px blue;
+        grid-area: footerone;
+    }
+
+    .footertwo {
+        border: solid 1px blue;
+        grid-area: footertwo;
+    }
+
+    .footerthree {
+        border: solid 1px blue;
+        grid-area: footerthree;
+    }
+
+    .footerfour {
+        border: solid 1px blue;
+        grid-area: footerfour;
+    }
+
+    .copyright {
+        border: solid 1px blue;
+        grid-area: copyright;
+    }
+}
 
 /*Медиазапросы - 768 x 1024 (iPad - Portrait) ==========================*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -544,7 +838,7 @@ img.easytouseright {
     .container {
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 100vh 37vh 30vh 50vh 50vh 50vh 45vh;
+        grid-template-rows: 100vh 37vh 30vh 55vh 23vh 25vh 25vh;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -604,6 +898,7 @@ img.easytouseright {
     }
 
     .features {
+        border: solid 1px blue;
         display: grid;
         grid-template-columns: 1% 30% 2% 30% 2% 30% 5%;
         grid-template-rows: 45% 55%;
@@ -636,9 +931,171 @@ img.easytouseright {
         border-radius: 8px;
     }
 
+    .technology {
+        display: grid;
+        grid-template-columns: 10% 38% 4% 38% 10%;
+        grid-template-rows: 30% 35%% 35%;
+        gap: 0px 0px;
+        grid-template-areas:
+
+            ". technologytitle technologytitle technologytitle."
+            ". technology1 . technology2 ."
+            ". technology3 . technology4 .";
+    }
+
+    .technologytitle {
+        border: solid 1px blue;
+        grid-area: technologytitle;
+        margin-top: 4%;
+    }
+
+    .technology1 {
+        border: solid 1px blue;
+        grid-area: technology1;
+        padding: 15px;
+    }
+
+    .technology2 {
+        border: solid 1px blue;
+        grid-area: technology2;
+        padding: 15px;
+    }
+
+    .technology3 {
+        border: solid 1px blue;
+        grid-area: technology3;
+        padding: 15px;
+    }
+
+    .technology4 {
+        border: solid 1px blue;
+        grid-area: technology4;
+        padding: 15px;
+    }
+
+    .technologylogo {
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+    .stayfocused {
+        display: grid;
+        grid-template-columns: 10% 75% 15%;
+        grid-template-rows: 10% 80% 10%;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". . ."
+            ". stayfocusedleft."
+            ". . .";
+    }
+
+    .stayfocusedleft {
+        grid-area: stayfocusedleft;
+    }
+
+    .stayfocusedright {
+        display: none;
+    }
+
+    .contact {
+        border: solid 1px blue;
+        display: grid;
+        grid-template-columns: 5% 38% 4% 48% 5%;
+        grid-template-rows: 5% 90% 5%;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". . . . ."
+            ". contactleft . contactright ."
+            ". . . . .";
+    }
+
+    .contactleft {
+        border: solid 1px blue;
+        grid-area: contactleft;
+    }
+
+    .contactright {
+        border: solid 1px blue;
+        grid-area: contactright;
+    }
+
+    .contactbox {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        gap: 0px 0px;
+        grid-template-areas:
+            "inputtextname"
+            "inputtextlastname"
+            "inputtextphone"
+            "inputtext";
+    }
+
+    .inputtextname {
+        grid-area: inputtextname;
+    }
+
+    .inputtextlastname {
+        grid-area: inputtextlastname;
+    }
+
+    .inputtextphone {
+        grid-area: inputtextphone;
+    }
+
+    .inputtext {
+        grid-area: inputtext;
+    }
+
+    .inputtextname,
+    .inputtextlastname,
+    .inputtextphone,
+    .inputtext {
+        padding-right: 0px;
+        padding-top: 5px;
+        padding-left: 0px;
+        padding-bottom: 5px;
+        margin-bottom: 1%;
+        border-radius: 6px;
+        border: solid 1px #132743;
+    }
+
+    .footer {
+        border: solid 1px blue;
+        display: grid;
+        grid-template-columns: 6% 20% 3% 20% 3% 20% 3% 20% 5%;
+        grid-template-rows: 80%;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". footerone . footertwo . footerthree . footerfour ."
+            ". . . . . . copyright copyright ."
+    }
+
+    .footerone {
+        border: solid 1px blue;
+        grid-area: footerone;
+    }
+
+    .footertwo {
+        border: solid 1px blue;
+        grid-area: footertwo;
+    }
+
+    .footerthree {
+        border: solid 1px blue;
+        grid-area: footerthree;
+    }
+
+    .footerfour {
+        border: solid 1px blue;
+        grid-area: footerfour;
+    }
+
+    .copyright {
+        border: solid 1px blue;
+        grid-area: copyright;
+    }
+
 
 }
-
-
-/*Медиазапросы - Мобильники 240 x 320 (small phone) 320 x 480 (iPhone) 480 x 640 (small tablet)=======================*/
-@media screen and (max-width: 767px) {}
