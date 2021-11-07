@@ -896,7 +896,7 @@ img.easytouseright {
     .technology {
         display: grid;
         grid-template-columns: 10% 38% 4% 38% 10%;
-        grid-template-rows: 30% 35%% 35%;
+        grid-template-rows: 30% 35% 35%;
         gap: 0px 0px;
         grid-template-areas:
 
@@ -1145,7 +1145,7 @@ img.easytouseright {
     .technology {
         display: grid;
         grid-template-columns: 10% 38% 4% 38% 10%;
-        grid-template-rows: 30% 35%% 35%;
+        grid-template-rows: 30% 35% 35%;
         gap: 0px 0px;
         grid-template-areas:
 
