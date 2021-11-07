@@ -476,6 +476,7 @@ button:hover {
 
 .langselect {
     color: #132743;
+    padding: 12px 16px;
 }
 
 /** Картинки (по порядку)------------------------------------------------- **/
@@ -558,6 +559,86 @@ img.easytouseright {
             "stayfocused"
             "contact"
             "footer";
+    }
+
+    .navigation-top {
+        overflow: hidden;
+        background-color: #ED4C5C;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        z-index: 99999;
+        display: grid;
+        grid-template-columns: 5% 15% 15% 40% 10% 10% 5%;
+        grid-template-areas:
+            ". headerlogo . navigation select transparent-button .";
+        align-items: center;
+    }
+
+    .headerlogo {
+        grid-area: headerlogo;
+    }
+
+    .navigation {
+        grid-area: navigation;
+    }
+
+    .select {
+        grid-area: select;
+    }
+
+    .transparent-button {
+        grid-area: transparent-button;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        /* Important for vertical align on mobile phones */
+        margin: 0;
+        /* Important for vertical align on mobile phones */
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: darkgrey;
+        color: white;
+        text-decoration: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
 
     .easytouse {
