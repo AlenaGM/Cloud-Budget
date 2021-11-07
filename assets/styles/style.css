@@ -539,12 +539,15 @@ img.easytouseright {
 
 /*======================================================================*/
 /*Медиазапросы - 737-> 1024px (планшеты горизонтально) ==========================*/
-@media screen and (min-width: 737px) and (max-width: 1024px) and (orientation: landscape) {
+@media screen and (min-width: 813px) and (max-width: 1024px) and (orientation: landscape) {
+    h1 {
+        color: orangered;
+    }
 
     .container {
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 100vh 50vh 55vh 45vh 50vh 45vh 45vh;
+        grid-template-rows: 100vh 55vh 65vh 55vh 50vh 40vh 40vh;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -579,11 +582,11 @@ img.easytouseright {
     }
 
     img.easytouseright {
-        max-width: 100%;
+        max-width: 90%;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 22px;
         line-height: 1.4em;
     }
 
@@ -663,7 +666,7 @@ img.easytouseright {
     .technology {
         display: grid;
         grid-template-columns: 7% 20% 2% 20% 2% 20% 2% 20% 7%;
-        grid-template-rows: 2% 8% 4% 86%;
+        grid-template-rows: 8% 8% 4% 80%;
         gap: 0px 0px;
         grid-template-areas:
             ". . . . . . . . ."
@@ -704,6 +707,29 @@ img.easytouseright {
         margin-right: 20%;
     }
 
+    .stayfocused {
+        display: grid;
+        grid-template-columns: 5% 35% 5% 70% 5%;
+        grid-template-rows: 10% 80% 10%;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". . . . ."
+            ". stayfocusedleft . stayfocusedright ."
+            ". . . . .";
+    }
+
+    .stayfocusedleft {
+        grid-area: stayfocusedleft;
+    }
+
+    .stayfocusedright {
+        grid-area: stayfocusedright;
+    }
+
+    .stayfocusedimg {
+        width: 70%;
+    }
+
     .contact {
         display: grid;
         grid-template-columns: 9% 30% 4% 48% 9%;
@@ -725,7 +751,7 @@ img.easytouseright {
 
     .contactbox {
         display: grid;
-        grid-template-columns: 1.5fr 0.05fr 1.7fr;
+        grid-template-columns: 1.7fr 0.1fr 1.7fr;
         grid-template-rows: 1fr 0.2fr 1fr 0.2fr 1fr;
         gap: 0px 0px;
         grid-template-areas:
@@ -764,6 +790,13 @@ img.easytouseright {
         border: solid 1px #132743;
     }
 
+    .inputtext,
+    .inputtextname,
+    .inputtextlastname,
+    .inputtextphone {
+        font-size: 12px;
+    }
+
     .footer {
         display: grid;
         grid-template-columns: 6% 20% 3% 20% 3% 20% 3% 20% 5%;
@@ -793,15 +826,36 @@ img.easytouseright {
     .copyright {
         grid-area: copyright;
     }
+
+    h2.footertitle {
+        font-size: 16px;
+    }
+
+    p.footertext,
+    .copyright {
+        font-size: 10px;
+    }
+
+    img.paymenticon {
+        width: 70%;
+    }
+
+    img.socialmediaicon {
+        width: 7%;
+    }
 }
 
 /*Медиазапросы - 415-> 768px (планшеты вертикально) ==========================*/
-@media screen and (min-width: 415px) and (max-width: 768px) and (orientation:portrait) {
+@media screen and (min-width: 415px) and (max-width: 1024px) and (orientation:portrait) {
+
+    h1 {
+        color: yellowgreen;
+    }
 
     .container {
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 100vh 40vh 30vh 45vh 23vh 30vh 25vh;
+        grid-template-rows: 100vh 40vh 50vh 55vh 30vh 40vh 55vh;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -840,8 +894,12 @@ img.easytouseright {
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 22px;
         line-height: 1.4em;
+    }
+
+    p {
+        font-size: 12px;
     }
 
     .learnmore {
@@ -1007,21 +1065,29 @@ img.easytouseright {
     .inputtext {
         padding-right: 0px;
         padding-top: 5px;
-        padding-left: 0px;
+        padding-left: 5px;
         padding-bottom: 5px;
         margin-bottom: 1%;
         border-radius: 6px;
         border: solid 1px #132743;
     }
 
+    .inputtext,
+    .inputtextname,
+    .inputtextlastname,
+    .inputtextphone {
+        font-size: 12px;
+    }
+
     .footer {
         display: grid;
-        grid-template-columns: 6% 20% 3% 20% 3% 20% 3% 20% 5%;
-        grid-template-rows: 80%;
+        grid-template-columns: 5% 28% 3% 28% 3% 28% 5%;
+        grid-template-rows: 2% 50% 38%;
         gap: 0px 0px;
         grid-template-areas:
-            ". footerone . footertwo . footerthree . footerfour ."
-            ". . . . . . copyright copyright ."
+            ". . . . . . ."
+            ". footerone . footertwo . footerthree ."
+            ". footerfour footerfour . copyright copyright .";
     }
 
     .footerone {
@@ -1042,15 +1108,38 @@ img.easytouseright {
 
     .copyright {
         grid-area: copyright;
+        padding-bottom: 15%;
+    }
+
+    img.paymenticon {
+        width: 60%;
+    }
+
+    h2.footertitle {
+        font-size: 16px;
+    }
+
+    p.footertext,
+    .copyright {
+        font-size: 10px;
+    }
+
+    img.socialmediaicon {
+        width: 7%;
     }
 }
 
+
 /*Медиазапросы - 0-> 736 (смартфоны горизонтально )==========================*/
-@media screen and (max-width: 736px) and (orientation:landscape) {
+@media screen and (max-width: 823px) and (orientation:landscape) {
+    h1 {
+        color: blueviolet;
+    }
+
     .container {
         display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 100vh 70vh 60vh 95vh 45vh 45vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 100vh 75vh 65vh 100vh 55vh 50vh;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -1064,19 +1153,17 @@ img.easytouseright {
 
     .easytouse {
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 10% 80% 10%;
         grid-template-rows: 12% 80% 8%;
         gap: 0px 0px;
         grid-template-areas:
-            "."
-            "easytouseleft"
-            ".";
+            ". . ."
+            ". easytouseleft ."
+            ". . .";
     }
 
     .easytouseleft {
         grid-area: easytouseleft;
-        padding-left: 5%;
-        padding-right: 5%;
     }
 
     .easytouseright {
@@ -1210,7 +1297,7 @@ img.easytouseright {
 
     .footer {
         display: grid;
-        grid-template-columns: 6% 43% 3% 43% 5%;
+        grid-template-columns: 10% 40% 3% 40% %;
         grid-template-rows: 10% 75% 15%;
         gap: 0px 0px;
         grid-template-areas:
@@ -1240,14 +1327,32 @@ img.easytouseright {
         grid-area: copyright;
         padding-bottom: 10%;
     }
+
+    h2.footertitle {
+        font-size: 16px;
+    }
+
+    p.footertext,
+    .copyright {
+        font-size: 10px;
+    }
+
+    img.socialmediaicon {
+        width: 7%;
+    }
 }
+
 
 /*Медиазапросы - /*Медиазапросы - 0-> 414 (смартфоны вертикально )==========================*/
 @media screen and (max-width: 414px) and (orientation:portrait) {
+    h1 {
+        color: blue;
+    }
+
     .container {
         display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 100vh 45vh 75vh 110vh 35vh 40vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 100vh 60vh 80vh 125vh 45vh 40vh;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -1344,7 +1449,7 @@ img.easytouseright {
     .features11,
     .features22,
     .features33 {
-        padding: 4px 8px 4px 8px;
+        padding: 2px 4px 2px 4px;
         text-align: center;
         background-color: #FFffff;
         border-radius: 8px;
@@ -1354,7 +1459,7 @@ img.easytouseright {
     .features1,
     .features2,
     .features3 {
-        width: 98vw;
+        width: 95%;
         border-radius: 8px;
     }
 
@@ -1428,7 +1533,7 @@ img.easytouseright {
 
     .footer {
         display: grid;
-        grid-template-columns: 6% 43% 3% 43% 5%;
+        grid-template-columns: 10% 41% 3% 41% 5%;
         grid-template-rows: 10% 65% 25%;
         gap: 0px 0px;
         grid-template-areas:
@@ -1457,5 +1562,18 @@ img.easytouseright {
     .copyright {
         grid-area: copyright;
         padding-bottom: 10%;
+    }
+
+    h2.footertitle {
+        font-size: 16px;
+    }
+
+    p.footertext,
+    .copyright {
+        font-size: 10px;
+    }
+
+    img.socialmediaicon {
+        width: 7%;
     }
 }
