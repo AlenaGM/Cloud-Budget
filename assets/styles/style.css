@@ -569,19 +569,16 @@ img.easytouseright {
     }
 
     .easytouseleft {
-        border: solid 1px green;
         grid-area: easytouseleft;
         padding-left: 6%;
         padding-right: 2%;
     }
 
     .easytouseright {
-        border: solid 1px green;
         grid-area: easytouseright;
     }
 
     img.easytouseright {
-        border: solid 1px green;
         max-width: 100%;
     }
 
@@ -612,7 +609,6 @@ img.easytouseright {
     }
 
     .features {
-        border: solid 1px green;
         display: grid;
         grid-template-columns: 4% 28% 4% 28% 4% 28% 4%;
         grid-template-rows: 8% 12% 80%;
@@ -648,7 +644,6 @@ img.easytouseright {
     .features11,
     .features22,
     .features33 {
-        border: solid 1px green;
         padding: 3px 10px 3px 10px;
         text-align: center;
         margin-left: 2%;
@@ -662,7 +657,6 @@ img.easytouseright {
     .features2,
     .features3 {
         margin-top: 0px;
-        border: solid 1px green;
         border-radius: 8px;
     }
 
@@ -679,7 +673,6 @@ img.easytouseright {
     }
 
     .technologytitle {
-        border: solid 1px blue;
         grid-area: technologytitle;
         margin-top: 4%;
     }
@@ -772,7 +765,6 @@ img.easytouseright {
     }
 
     .footer {
-        border: solid 1px blue;
         display: grid;
         grid-template-columns: 6% 20% 3% 20% 3% 20% 3% 20% 5%;
         grid-template-rows: 80%;
@@ -783,27 +775,22 @@ img.easytouseright {
     }
 
     .footerone {
-        border: solid 1px blue;
         grid-area: footerone;
     }
 
     .footertwo {
-        border: solid 1px blue;
         grid-area: footertwo;
     }
 
     .footerthree {
-        border: solid 1px blue;
         grid-area: footerthree;
     }
 
     .footerfour {
-        border: solid 1px blue;
         grid-area: footerfour;
     }
 
     .copyright {
-        border: solid 1px blue;
         grid-area: copyright;
     }
 }
@@ -874,7 +861,6 @@ img.easytouseright {
     }
 
     .features {
-        border: solid 1px blue;
         display: grid;
         grid-template-columns: 1% 30% 2% 30% 2% 30% 5%;
         grid-template-rows: 45% 55%;
@@ -920,31 +906,26 @@ img.easytouseright {
     }
 
     .technologytitle {
-        border: solid 1px blue;
         grid-area: technologytitle;
         margin-top: 4%;
     }
 
     .technology1 {
-        border: solid 1px blue;
         grid-area: technology1;
         padding: 15px;
     }
 
     .technology2 {
-        border: solid 1px blue;
         grid-area: technology2;
         padding: 15px;
     }
 
     .technology3 {
-        border: solid 1px blue;
         grid-area: technology3;
         padding: 15px;
     }
 
     .technology4 {
-        border: solid 1px blue;
         grid-area: technology4;
         padding: 15px;
     }
@@ -975,7 +956,6 @@ img.easytouseright {
     }
 
     .contact {
-        border: solid 1px blue;
         display: grid;
         grid-template-columns: 5% 38% 4% 48% 5%;
         grid-template-rows: 5% 90% 5%;
@@ -987,12 +967,10 @@ img.easytouseright {
     }
 
     .contactleft {
-        border: solid 1px blue;
         grid-area: contactleft;
     }
 
     .contactright {
-        border: solid 1px blue;
         grid-area: contactright;
     }
 
@@ -1038,7 +1016,6 @@ img.easytouseright {
     }
 
     .footer {
-        border: solid 1px blue;
         display: grid;
         grid-template-columns: 6% 20% 3% 20% 3% 20% 3% 20% 5%;
         grid-template-rows: 80%;
@@ -1049,27 +1026,22 @@ img.easytouseright {
     }
 
     .footerone {
-        border: solid 1px blue;
         grid-area: footerone;
     }
 
     .footertwo {
-        border: solid 1px blue;
         grid-area: footertwo;
     }
 
     .footerthree {
-        border: solid 1px blue;
         grid-area: footerthree;
     }
 
     .footerfour {
-        border: solid 1px blue;
         grid-area: footerfour;
     }
 
     .copyright {
-        border: solid 1px blue;
         grid-area: copyright;
     }
 }
@@ -1134,7 +1106,6 @@ img.easytouseright {
     }
 
     .features {
-        border: solid 1px blue;
         display: grid;
         grid-template-columns: 1% 30% 2% 30% 2% 30% 5%;
         grid-template-rows: 45% 55%;
@@ -1184,31 +1155,26 @@ img.easytouseright {
     }
 
     .technologytitle {
-        border: solid 1px blue;
         grid-area: technologytitle;
         margin-top: 4%;
     }
 
     .technology1 {
-        border: solid 1px blue;
         grid-area: technology1;
         padding: 15px;
     }
 
     .technology2 {
-        border: solid 1px blue;
         grid-area: technology2;
         padding: 15px;
     }
 
     .technology3 {
-        border: solid 1px blue;
         grid-area: technology3;
         padding: 15px;
     }
 
     .technology4 {
-        border: solid 1px blue;
         grid-area: technology4;
         padding: 15px;
     }
@@ -1244,7 +1210,6 @@ img.easytouseright {
 
 
     .footer {
-        border: solid 1px blue;
         display: grid;
         grid-template-columns: 6% 43% 3% 43% 5%;
         grid-template-rows: 80%;
@@ -1255,17 +1220,14 @@ img.easytouseright {
     }
 
     .footerone {
-        border: solid 1px blue;
         grid-area: footerone;
     }
 
     .footertwo {
-        border: solid 1px blue;
         grid-area: footertwo;
     }
 
     .footerthree {
-        border: solid 1px blue;
         grid-area: footerthree;
     }
 
@@ -1275,7 +1237,6 @@ img.easytouseright {
     }
 
     .copyright {
-        border: solid 1px blue;
         grid-area: copyright;
     }
 }
@@ -1340,7 +1301,6 @@ img.easytouseright {
     }
 
     .features {
-        border: solid 1px blue;
         display: grid;
         grid-template-columns: 1% 94% 5%;
         grid-template-rows: 19% 27% 27% 27%;
@@ -1381,7 +1341,6 @@ img.easytouseright {
     .features11,
     .features22,
     .features33 {
-        border: solid 1px yellowgreen;
         padding: 4px 8px 4px 8px;
         text-align: center;
         background-color: #FFffff;
@@ -1411,31 +1370,26 @@ img.easytouseright {
     }
 
     .technologytitle {
-        border: solid 1px blue;
         grid-area: technologytitle;
         margin-top: 4%;
     }
 
     .technology1 {
-        border: solid 1px blue;
         grid-area: technology1;
         padding: 15px;
     }
 
     .technology2 {
-        border: solid 1px blue;
         grid-area: technology2;
         padding: 15px;
     }
 
     .technology3 {
-        border: solid 1px blue;
         grid-area: technology3;
         padding: 15px;
     }
 
     .technology4 {
-        border: solid 1px blue;
         grid-area: technology4;
         padding: 15px;
     }
@@ -1469,9 +1423,7 @@ img.easytouseright {
         display: none;
     }
 
-
     .footer {
-        border: solid 1px blue;
         display: grid;
         grid-template-columns: 6% 43% 3% 43% 5%;
         grid-template-rows: 80%;
@@ -1482,17 +1434,14 @@ img.easytouseright {
     }
 
     .footerone {
-        border: solid 1px blue;
         grid-area: footerone;
     }
 
     .footertwo {
-        border: solid 1px blue;
         grid-area: footertwo;
     }
 
     .footerthree {
-        border: solid 1px blue;
         grid-area: footerthree;
     }
 
@@ -1502,7 +1451,6 @@ img.easytouseright {
     }
 
     .copyright {
-        border: solid 1px blue;
         grid-area: copyright;
     }
 }
@@ -1567,7 +1515,6 @@ img.easytouseright {
     }
 
     .features {
-        border: solid 1px blue;
         display: grid;
         grid-template-columns: 1% 94% 5%;
         grid-template-rows: 16% 28% 28% 28%;
@@ -1608,7 +1555,6 @@ img.easytouseright {
     .features11,
     .features22,
     .features33 {
-        border: solid 1px yellowgreen;
         padding: 4px 8px 4px 8px;
         text-align: center;
         background-color: #FFffff;
@@ -1638,31 +1584,26 @@ img.easytouseright {
     }
 
     .technologytitle {
-        border: solid 1px blue;
         grid-area: technologytitle;
         margin-top: 4%;
     }
 
     .technology1 {
-        border: solid 1px blue;
         grid-area: technology1;
         padding: 15px;
     }
 
     .technology2 {
-        border: solid 1px blue;
         grid-area: technology2;
         padding: 15px;
     }
 
     .technology3 {
-        border: solid 1px blue;
         grid-area: technology3;
         padding: 15px;
     }
 
     .technology4 {
-        border: solid 1px blue;
         grid-area: technology4;
         padding: 15px;
     }
@@ -1698,7 +1639,6 @@ img.easytouseright {
 
 
     .footer {
-        border: solid 1px blue;
         display: grid;
         grid-template-columns: 6% 89% 5%;
         grid-template-rows: 80%;
@@ -1710,17 +1650,14 @@ img.easytouseright {
     }
 
     .footerone {
-        border: solid 1px blue;
         grid-area: footerone;
     }
 
     .footertwo {
-        border: solid 1px blue;
         grid-area: footertwo;
     }
 
     .footerthree {
-        border: solid 1px blue;
         grid-area: footerthree;
     }
 
@@ -1730,7 +1667,6 @@ img.easytouseright {
     }
 
     .copyright {
-        border: solid 1px blue;
         grid-area: copyright;
     }
 }
