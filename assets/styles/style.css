@@ -567,7 +567,7 @@ img.easytouseright {
 }
 
 /*======================================================================*/
-/*Медиазапросы - 737-> 1024px (планшеты горизонтально) ==========================*/
+/*Медиазапросы - 813-> 1024px (планшеты горизонтально) ==========================*/
 @media screen and (min-width: 813px) and (max-width: 1080px) and (orientation: landscape) {
     .container {
         display: grid;
@@ -1256,17 +1256,12 @@ img.easytouseright {
     }
 }
 
-
-/*Медиазапросы - 0-> 736 (смартфоны горизонтально )==========================*/
-@media screen and (max-width: 823px) and (orientation:landscape) {
-    h1 {
-        color: blueviolet;
-    }
-
+/*Медиазапросы - 0-> 812 (смартфоны горизонтально )==========================*/
+@media screen and (max-width: 812px) and (orientation:landscape) {
     .container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 100vh 75vh 65vh 100vh 55vh 50vh;
+        grid-template-rows: 30vh 70vh 60vh 100vh 55vh 50vh;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -1276,6 +1271,63 @@ img.easytouseright {
             "technology"
             "stayfocused"
             "footer";
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        grid-template-areas:
+            ". navigation-top navigation-top navigation-top ."
+    }
+
+    .header {
+        background: none;
+    }
+
+    .navigation-top {
+        overflow: hidden;
+        background-color: #ED4C5C;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        z-index: 99999;
+        display: grid;
+        grid-template-columns: 2% 1.2fr 3fr 1fr 1fr 2%;
+        grid-template-areas:
+            ". headerlogo navigation select transparent-button .";
+        align-items: center;
+    }
+
+    .headerlogo {
+        grid-area: headerlogo;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .select {
+        grid-area: select;
+    }
+
+    .transparent-button {
+        grid-area: transparent-button;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .headerintro {
+        display: none;
+    }
+
+    .white-button {
+        display: none;
     }
 
     .easytouse {
@@ -1321,7 +1373,7 @@ img.easytouseright {
     .features {
         display: grid;
         grid-template-columns: 1% 30% 2% 30% 2% 30% 5%;
-        grid-template-rows: 45% 55%;
+        grid-template-rows: 35% 1fr;
         gap: 0px 0px;
         grid-template-areas:
             ". featurestitle featurestitle featurestitle featurestitle featurestitle ."
@@ -1351,7 +1403,7 @@ img.easytouseright {
     .features1,
     .features2,
     .features3 {
-        width: 33vw;
+        width: 100%;
         border-radius: 8px;
     }
 
@@ -1479,7 +1531,7 @@ img.easytouseright {
     .container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 100vh 60vh 70vh 125vh 45vh 40vh;
+        grid-template-rows: 10vh 60vh 70vh 125vh 45vh 40vh;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -1489,6 +1541,64 @@ img.easytouseright {
             "technology"
             "stayfocused"
             "footer";
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        grid-template-areas:
+            ". navigation-top navigation-top navigation-top ."
+    }
+
+    .header {
+        background: none;
+    }
+
+    .navigation-top {
+        overflow: hidden;
+        background-color: #ED4C5C;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        z-index: 99999;
+        display: grid;
+        grid-template-columns: 1fr 49% 24% 25% 1fr;
+        grid-template-areas:
+            ". headerlogo select transparent-button .";
+        align-items: center;
+    }
+
+    .headerlogo {
+        grid-area: headerlogo;
+        height: 100%;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .select {
+        grid-area: select;
+    }
+
+    .transparent-button {
+        grid-area: transparent-button;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .headerintro {
+        display: none;
+    }
+
+    .white-button {
+        display: none;
     }
 
     .easytouse {
