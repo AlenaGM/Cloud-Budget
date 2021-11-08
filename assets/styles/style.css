@@ -924,8 +924,8 @@ img.easytouseright {
     }
 }
 
-/*Медиазапросы - 415-> 1024px (планшеты вертикально) ==========================*/
-@media screen and (min-width: 415px) and (max-width: 1024px) and (orientation:portrait) {
+/*Медиазапросы - 429-> 1024px (планшеты вертикально) ==========================*/
+@media screen and (min-width: 429px) and (max-width: 1024px) and (orientation:portrait) {
 
     .container {
         display: grid;
@@ -1135,7 +1135,7 @@ img.easytouseright {
         display: none;
     }
 
-    .stayfocusedimg. {
+    .stayfocusedimg {
         display: none;
     }
 
@@ -1209,7 +1209,7 @@ img.easytouseright {
     .footer {
         display: grid;
         grid-template-columns: 5% 28% 3% 28% 3% 28% 5%;
-        grid-template-rows: 2% 50% 1fr%;
+        grid-template-rows: 2% 50% 1fr;
         gap: 0px 0px;
         grid-template-areas:
             ". . . . . . ."
@@ -1476,7 +1476,7 @@ img.easytouseright {
 
     .footer {
         display: grid;
-        grid-template-columns: 10% 40% 3% 40% %;
+        grid-template-columns: 10% 40% 3% 40%;
         grid-template-rows: 10% 75% 15%;
         gap: 0px 0px;
         grid-template-areas:
@@ -1523,15 +1523,11 @@ img.easytouseright {
 
 
 /*Медиазапросы - /*Медиазапросы - 0-> 414 (смартфоны вертикально )==========================*/
-@media screen and (max-width: 414px) and (orientation:portrait) {
-    h1 {
-        color: blue;
-    }
-
+@media screen and (max-width: 428px) and (orientation:portrait) {
     .container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 10vh 60vh 70vh 125vh 45vh 40vh;
+        grid-template-rows: 10vh 60vh 75vh 125vh 45vh 40vh;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -1602,7 +1598,6 @@ img.easytouseright {
     }
 
     .easytouse {
-        border: solid 1px yellowgreen;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 12% 80% 8%;
@@ -1645,7 +1640,6 @@ img.easytouseright {
     }
 
     .features {
-        border: solid 1px yellowgreen;
         display: grid;
         grid-template-columns: 7% 88% 5%;
         grid-template-rows: 19% 27% 27% 27%;
